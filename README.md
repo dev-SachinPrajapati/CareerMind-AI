@@ -49,7 +49,7 @@ cd CareerMind-AI
 npm install
 
 # 4. Create a `.env` file and add required environment variables
-cp .env.example .env
+Create .env file 
 
 # 5. Run the development server
 npm run dev
