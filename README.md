@@ -7,7 +7,7 @@
 ---
 
 <p align="center">
-  <img src="/logo.png" alt="CareerMind AI Logo" width="400"/>
+  <img src="./public/logo.png" alt="CareerMind AI Logo" width="400"/>
 </p>
 
 ## 🧠 What It Does
