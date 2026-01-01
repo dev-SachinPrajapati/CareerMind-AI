@@ -1,4 +1,5 @@
 import { serve } from "inngest/next";
+export const runtime = 'nodejs'; // or 'nodejs' if using Node
 
 import { inngest } from "@/lib/inngest/client";
 import { generateIndustryInsights } from "@/lib/inngest/function";
@@ -14,5 +15,4 @@ export const { GET, POST, PUT } = serve({
 //     bodyParser: false,
 //   },
 // };
-export const runtime = 'nodejs'; // or 'nodejs' if using Node
 // export const revalidate = 0;   // example static/revalidation settings
