@@ -34,7 +34,7 @@ export default function LandingPage() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
-            Smart Features Designed for Your Success
+            Smart features to support your career growth
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {features.map((feature, index) => (
@@ -57,25 +57,40 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* What’s Inside Section */}
       <section className="w-full py-12 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            What You Get
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center">
             <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">10+</h3>
-              <p className="text-muted-foreground">Industries Covered</p>
+              <h3 className="text-xl font-semibold">Industry Coverage</h3>
+              <p className="text-muted-foreground">
+                Questions tailored for multiple roles and domains.
+              </p>
             </div>
+
             <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">100+</h3>
-              <p className="text-muted-foreground">Interview Questions</p>
+              <h3 className="text-xl font-semibold">Smart Practice</h3>
+              <p className="text-muted-foreground">
+                AI-generated interview questions and follow-ups.
+              </p>
             </div>
+
             <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">95%</h3>
-              <p className="text-muted-foreground">Success Rate</p>
+              <h3 className="text-xl font-semibold">Instant Feedback</h3>
+              <p className="text-muted-foreground">
+                Get real-time insights to improve your answers.
+              </p>
             </div>
+
             <div className="flex flex-col items-center justify-center space-y-2">
-              <h3 className="text-4xl font-bold">24/7</h3>
-              <p className="text-muted-foreground">AI Support</p>
+              <h3 className="text-xl font-semibold">Anytime Access</h3>
+              <p className="text-muted-foreground">
+                Practice interviews whenever it fits your schedule.
+              </p>
             </div>
           </div>
         </div>
@@ -111,51 +126,49 @@ export default function LandingPage() {
       <section className="w-full py-12 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
-            What Our Users Say
+            Why We Built This
           </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonial.map((testimonial, index) => (
-              <Card key={index} className="bg-background">
-                <CardContent className="pt-6">
-                  <div className="flex flex-col space-y-4">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="relative h-12 w-12 flex-shrink-0">
-                        <Image
-                          width={40}
-                          height={40}
-                          src={testimonial.image}
-                          alt={testimonial.author}
-                          className="rounded-full object-cover border-2 border-primary/20"
-                        />
-                      </div>
-                      <div>
-                        <p className="font-semibold">{testimonial.author}</p>
-                        <p className="text-sm text-muted-foreground">
-                          {testimonial.role}
-                        </p>
-                        <p className="text-sm text-primary">
-                          {testimonial.company}
-                        </p>
-                      </div>
-                    </div>
-                    <blockquote>
-                      <p className="text-muted-foreground italic relative">
-                        <span className="text-3xl text-primary absolute -top-4 -left-2">
-                          &quot;
-                        </span>
-                        {testimonial.quote}
-                        <span className="text-3xl text-primary absolute -bottom-4">
-                          &quot;
-                        </span>
-                      </p>
-                    </blockquote>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="bg-background">
+              <CardContent className="pt-6">
+                <h3 className="font-semibold text-lg mb-2">
+                  A Real Problem
+                </h3>
+                <p className="text-muted-foreground">
+                  We kept running into tools that were either too complex or too limited.
+                  This project started as a way to solve that gap.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background">
+              <CardContent className="pt-6">
+                <h3 className="font-semibold text-lg mb-2">
+                  Designed for Simplicity
+                </h3>
+                <p className="text-muted-foreground">
+                  Every feature is intentional — no clutter, no unnecessary steps,
+                  just what you need to get things done.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background">
+              <CardContent className="pt-6">
+                <h3 className="font-semibold text-lg mb-2">
+                  Built With Users in Mind
+                </h3>
+                <p className="text-muted-foreground">
+                  This product is evolving in public. Early users help shape the roadmap
+                  and influence what we build next.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
+
 
       {/* FAQ Section */}
       <section className="w-full py-12 md:py-24">
@@ -189,11 +202,10 @@ export default function LandingPage() {
         <div className="mx-auto py-24 gradient rounded-lg">
           <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tighter text-primary-foreground sm:text-4xl md:text-5xl">
-              Ready to Accelerate Your Career?
+              Ready to take the next step in your career?
             </h2>
             <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">
-              Join thousands of professionals who are advancing their careers
-              with AI-powered guidance.
+              Start advancing your career with AI-powered guidance.
             </p>
             <Link href="/dashboard" passHref>
               <Button
@@ -201,7 +213,7 @@ export default function LandingPage() {
                 variant="secondary"
                 className="h-11 mt-5 animate-bounce"
               >
-                Start Your Journey Today <ArrowRight className="ml-2 h-4 w-4" />
+                Start your Career Journey <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>

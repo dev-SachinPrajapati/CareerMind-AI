@@ -5,6 +5,8 @@ import { Toaster } from "sonner";
 import Header from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { dark } from "@clerk/themes";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,7 +39,12 @@ export default function RootLayout({ children }) {
 
             <footer className="bg-muted/50 py-12">
               <div className="container mx-auto px-4 text-center text-gray-200">
-                <p>Made by Sachin Prajapati</p>
+                <div className="flex flex-row items-center justify-center space-x-2">
+                  <p>Made by</p>
+                  <Link href="https://www.linkedin.com/in/sachin-prajapati-it/" className="underline text-blue-300">
+                    Sachin Prajapati
+                  </Link>
+                </div>
               </div>
             </footer>
           </ThemeProvider>
