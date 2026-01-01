@@ -9,8 +9,10 @@ export const { GET, POST, PUT } = serve({
 });
 
 // 🔧 Disable bodyParser so Inngest can handle the raw request body correctly
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+// export const config = {
+//   api: {
+//     bodyParser: false,
+//   },
+// };
+export const runtime = 'edge'; // or 'nodejs' if using Node
+export const revalidate = 0;   // example static/revalidation settings
