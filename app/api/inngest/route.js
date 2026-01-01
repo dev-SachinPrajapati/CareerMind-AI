@@ -15,4 +15,4 @@ export const { GET, POST, PUT } = serve({
 //   },
 // };
 export const runtime = 'nodejs'; // or 'nodejs' if using Node
-export const revalidate = 0;   // example static/revalidation settings
+// export const revalidate = 0;   // example static/revalidation settings
