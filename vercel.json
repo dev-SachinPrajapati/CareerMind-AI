@@ -1,7 +1,7 @@
 {
   "functions": {
     "app/api/inngest/route.ts": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs@18"
     }
   }
 }
