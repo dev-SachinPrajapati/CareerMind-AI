@@ -11,6 +11,8 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  root: true,
+  extends: ['next/core-web-vitals', 'eslint:recommended'],
 };
 
 export default nextConfig;
