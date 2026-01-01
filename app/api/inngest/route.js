@@ -14,5 +14,5 @@ export const { GET, POST, PUT } = serve({
 //     bodyParser: false,
 //   },
 // };
-// export const runtime = 'edge'; // or 'nodejs' if using Node
-// export const revalidate = 0;   // example static/revalidation settings
+export const runtime = 'nodejs'; // or 'nodejs' if using Node
+export const revalidate = 0;   // example static/revalidation settings
